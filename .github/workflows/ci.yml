@@ -9,7 +9,7 @@ jobs:
     name: integration-testing-check-id
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
       - name: Run integration tests
         run: |
           echo "Running integration tests..."
@@ -18,7 +18,7 @@ jobs:
     name: static-code-analysis-check-id
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
       - name: Run static code analysis
         run: |
           echo "Running static code analysis..."
